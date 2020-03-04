@@ -5,6 +5,9 @@ This file was recovered from a [deleted Stack Overflow post][2], referenced [in 
 
 The original authors are acknowledged in the header comment.
 
+# MatlabFigureExtractData
+Read data from `.fig` file and save in simple text format.
+
 ## Functionality
 
 Unpacks the struct that is stored in the `.fig` file (which is a specialisation of the `.mat` format).  Detects lines, scatter plots, surface plots within the struct as well as textual elements.
@@ -15,9 +18,16 @@ Quote from the author who expanded the original:
 
 ## Usage
 
+OpenMatlabFigureInOctave.m
+
     fname = "/path/to/my/figure.fig"
     OpenMatlabFigureInOctave(fname)
-    
+
+MatlabFigureExtractData.m
+
+    fname = "/path/to/my/figure.fig"
+    MatlabFigureExtractData(fname,"figure_dataset")
+
 ## Contributions
 
 Contributions are welcome - just send in a pull request.
